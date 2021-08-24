@@ -5,6 +5,8 @@
  */
 package classes;
 
+import java.util.ArrayList;
+import java.util.List;
 import jdk.nashorn.internal.parser.JSONParser;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -28,8 +30,10 @@ public class clsJson {
          JSONObject jsonObject = (JSONObject) jsonParser.parse();
          //Retrieving the array
          JSONArray jsonArray = (JSONArray) jsonObject.get("people");
+         List<String> list = new ArrayList<String>();
          for(Object object : jsonArray) {
             JSONObject record = (JSONObject) object;
+//            list.add(record.getJSONArray(jsonArray));
         }  
       } catch (Exception e) {
          // TODO Auto-generated catch block
