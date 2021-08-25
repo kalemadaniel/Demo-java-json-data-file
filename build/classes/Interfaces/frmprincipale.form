@@ -31,7 +31,7 @@
     <Container class="javax.swing.JPanel" name="jPanel3">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="97" green="5a" red="0" type="rgb"/>
+          <Color blue="7" green="ac" red="6a" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -231,7 +231,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="130" width="720" height="250"/>
+              <AbsoluteConstraints x="10" y="120" width="720" height="260"/>
             </Constraint>
           </Constraints>
 
