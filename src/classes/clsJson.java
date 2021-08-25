@@ -27,18 +27,18 @@ public class clsJson {
     FileNameExtensionFilter filter = null;
 
    
-    public void ChooseJsonFile(JTextField txtPath) {
-        JFileChooser fileChooser = new JFileChooser();
-        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
-        filter = new FileNameExtensionFilter("*.JSON", "json", "Json");
-        fileChooser.addChoosableFileFilter(filter);
-        int result = fileChooser.showSaveDialog(null);
-        if (result == JFileChooser.APPROVE_OPTION) {
-            File selectedFile = fileChooser.getSelectedFile();
-            String path = selectedFile.getAbsolutePath();
-            txtPath.setText(path);
-        }
-    }
+//    public void ChooseJsonFile(JTextField txtPath) {
+//        JFileChooser fileChooser = new JFileChooser();
+//        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
+//        filter = new FileNameExtensionFilter("*.JSON", "json", "Json");
+//        fileChooser.addChoosableFileFilter(filter);
+//        int result = fileChooser.showSaveDialog(null);
+//        if (result == JFileChooser.APPROVE_OPTION) {
+//            File selectedFile = fileChooser.getSelectedFile();
+//            String path = selectedFile.getAbsolutePath();
+//            txtPath.setText(path);
+//        }
+//    }
     
    public void readJsonfile(){
      
