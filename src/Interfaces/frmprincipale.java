@@ -5,6 +5,8 @@
  */
 package Interfaces;
 
+import classes.clsJson;
+
 /**
  *
  * @author Ulb-Kalema
@@ -105,6 +107,8 @@ public class frmprincipale extends javax.swing.JFrame {
 
     private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
         // TODO add your handling code here:
+        clsJson json=new clsJson();
+        json.ChooseJsonFile(jTextField1);
     }//GEN-LAST:event_jPanel2MouseClicked
 
     /**
