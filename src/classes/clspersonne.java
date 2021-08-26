@@ -130,7 +130,6 @@ public class clspersonne {
       //Getting the connection
       String mysqlUrl = "jdbc:mysql://localhost/bd_json_msyql";
       java.sql.Connection con = DriverManager.getConnection(mysqlUrl, "root", "MQ4k4z22MhB6vD8GvsrY87du75KiNW");
-      System.out.println("Connection established......");
       return (Connection) con;
    }
     

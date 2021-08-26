@@ -44,16 +44,6 @@ public class clsJson {
     }
 
     
-    
-    public static Connection ConnectToDB() throws Exception {
-      //Registering the Driver
-      DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-      //Getting the connection
-      String mysqlUrl = "jdbc:mysql://localhost/bd_json_msyql";
-      java.sql.Connection con = DriverManager.getConnection(mysqlUrl, "root", "MQ4k4z22MhB6vD8GvsrY87du75KiNW");
-      System.out.println("Connection established......");
-      return (Connection) con;
-   }
     public void insertJsonfile()  {
         // TODO code application logic here
         //Creating a JSONParser object
@@ -63,33 +53,24 @@ public class clsJson {
          JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader("./players_data.json"));
          //Retrieving the array
          JSONArray jsonArray = (JSONArray) jsonObject.get("players_data");
-         Connection con = ConnectToDB();
+         
          //Insert a row into the MyPlayers table
-         PreparedStatement pstmt = con.prepareStatement("INSERT INTO tb_population values (?, ?, ?, ?, ?, ?, ? )");
+         clspersonne pers=new clspersonne();
          for(Object object : jsonArray) {
             JSONObject record = (JSONObject) object;
-            
-            int id = Integer.parseInt((String) record.get("ID"));
-            String first_name = (String) record.get("First_Name");
-            String last_name = (String) record.get("Last_Name");
-            String date = (String) record.get("Date_Of_Birth");
-            long date_of_birth = Date.valueOf(date).getTime();
-            String place_of_birth = (String) record.get("Place_Of_Birth");
-            String country = (String) record.get("Country");
-            pstmt.setInt(1, id);
-            pstmt.setString(2, first_name);
-            pstmt.setString(3, last_name);
-            pstmt.setDate(4, new Date(date_of_birth));
-            pstmt.setString(5, place_of_birth);
-            pstmt.setString(6, country);
-            pstmt.executeUpdate();
+            pers.setId(Integer.parseInt((String) record.get("ID")));
+            pers.setNom((String) record.get("nom"));
+            pers.setNom((String) record.get("postnom"));
+            pers.setNom((String) record.get("prenom"));
+            pers.setAge(Integer.parseInt((String) record.get("age")));
+            pers.setNom((String) record.get("genre"));
+            pers.setNom((String) record.get("ville"));
+            pers.insertdata(pers);
          }  
          System.out.println("Records inserted.....");
       } catch (FileNotFoundException e) {
          e.printStackTrace();
       } catch (IOException e) {
-         e.printStackTrace();
-      } catch (ParseException e) {
          e.printStackTrace();
       } catch (Exception e) {
          // TODO Auto-generated catch block
