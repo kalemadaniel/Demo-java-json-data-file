@@ -5,6 +5,13 @@
  */
 package classes;
 
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Ulb-Kalema
@@ -115,4 +122,34 @@ public class clspersonne {
     public void setVille(String ville) {
         this.ville = ville;
     }
+    
+    
+    public static Connection ConnectToDB() throws Exception {
+      //Registering the Driver
+      DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+      //Getting the connection
+      String mysqlUrl = "jdbc:mysql://localhost/bd_json_msyql";
+      java.sql.Connection con = DriverManager.getConnection(mysqlUrl, "root", "MQ4k4z22MhB6vD8GvsrY87du75KiNW");
+      System.out.println("Connection established......");
+      return (Connection) con;
+   }
+    
+   public void insertdata(clspersonne pers){
+        try {
+            Connection con = ConnectToDB();
+            PreparedStatement pstmt = con.prepareStatement("INSERT INTO tb_population (`id`, `nom`, `postnom`, `prenom`, `age`, `genre`, `ville`) values (?, ?, ?, ?, ?, ?, ? )");
+            pstmt.setInt(1, pers.getId());
+            pstmt.setString(2, pers.getNom());
+            pstmt.setString(3, pers.getPostnom());
+            pstmt.setString(4, pers.getPostnom());
+            pstmt.setInt(5, pers.getAge());
+            pstmt.setString(6, pers.getGenre());
+            pstmt.setString(7, pers.getVille());
+            pstmt.executeUpdate();
+        } catch (Exception ex) {
+            Logger.getLogger(clspersonne.class.getName()).log(Level.SEVERE, null, ex);
+        }
+   }
+    
+    
 }
