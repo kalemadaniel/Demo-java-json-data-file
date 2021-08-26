@@ -45,6 +45,7 @@ public class frmprincipale extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(106, 172, 7));
@@ -141,7 +142,7 @@ public class frmprincipale extends javax.swing.JFrame {
     private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
         // TODO add your handling code here:
         clsJson json=new clsJson();
-        json.readJsonfile(jList1);
+//        json.readJsonfile(jList1);
     }//GEN-LAST:event_jPanel2MouseClicked
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
