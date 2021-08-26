@@ -51,6 +51,8 @@ public class frmprincipale extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(106, 172, 7));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/json-icon-512x512-l8x97ij7.png"))); // NOI18N
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, 70));
 
         jLabel9.setFont(new java.awt.Font("Pristina", 1, 48)); // NOI18N
