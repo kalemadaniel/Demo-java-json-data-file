@@ -18,6 +18,7 @@ public class frmprincipale extends javax.swing.JFrame {
      */
     public frmprincipale() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
