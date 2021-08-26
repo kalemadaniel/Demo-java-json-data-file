@@ -45,32 +45,29 @@ public class clsJson {
 
 
 
-    public void readJsonfile1() {
-       //Creating a JSONParser object
-      JSONParser jsonParser = new JSONParser();
-      try {
-         //Parsing the contents of the JSON file
-         JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader("E:/players_data.json"));
-         //Retrieving the array
-         JSONArray jsonArray = (JSONArray) jsonObject.get("players_data");
-         for(Object object : jsonArray) {
-            JSONObject record = (JSONObject) object;
-            int id = Integer.parseInt((String) record.get("ID"));
-            String first_name = (String) record.get("First_Name");
-            String last_name = (String) record.get("Last_Name");
-            String date = (String) record.get("Date_Of_Birth");
-            long date_of_birth = Date.valueOf(date).getTime();
-            String place_of_birth = (String) record.get("Place_Of_Birth");
-            String country = (String) record.get("Country");
-         }  
-         System.out.println("Records inserted.....");
-      } catch (FileNotFoundException e) {
-         e.printStackTrace();
-      } catch (IOException e) {
-         e.printStackTrace();
-      } catch (Exception e) {
-         // TODO Auto-generated catch block
-         e.printStackTrace();
-      }
-    }
+//    public void readJsonfile(JList lst)  {
+//      JSONParser jsonParser;
+//      try {
+//          jsonParser = new JSONParser(new FileReader("E:/players_data.json").toString(), null, true);
+//         //Parsing the contents of the JSON file
+//         JSONObject jsonObject = (JSONObject) jsonParser.parse();
+//         //Retrieving the array
+//         JSONArray jsonArray = (JSONArray) jsonObject.get("players_data");
+//         for(Object object : jsonArray) {
+//            JSONObject record = (JSONObject) object;
+//            //lst.add();
+////            int id = Integer.parseInt((String) record.get("ID"));
+////            String first_name = (String) record.get("First_Name");
+////            String last_name = (String) record.get("Last_Name");
+////            String date = (String) record.get("Date_Of_Birth");
+////            long date_of_birth = Date.valueOf(date).getTime();
+////            String place_of_birth = (String) record.get("Place_Of_Birth");
+////            String country = (String) record.get("Country");
+//         }  
+//         System.out.println("Records inserted.....");
+//      } catch (Exception e) {
+//         // TODO Auto-generated catch block
+//         e.printStackTrace();
+//      }
+//    }
 }
