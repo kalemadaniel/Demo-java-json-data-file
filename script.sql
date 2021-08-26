@@ -11,7 +11,7 @@ CREATE TABLE tb_population
 	ville VARCHAR(20)
 );
 
-CREATE OR REPLACE VIEW 
+CREATE OR REPLACE VIEW v_popupation
 AS
-SELECT id as Code, CONCAT(nom.' '.postnom.' '.prenom) AS Individu, genre AS Sexe, age AS Age, ville as Ville FROM tb_population
+SELECT id as Code, CONCAT(nom," ",postnom," ",prenom) AS Individu, genre AS Sexe, age AS Age, ville as Ville FROM tb_population
 ORDER BY id;
