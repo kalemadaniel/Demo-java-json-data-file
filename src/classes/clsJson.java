@@ -48,7 +48,7 @@ public class clsJson {
     public void readJsonfile(JList lst)  {
       JSONParser jsonParser;
       try {
-          jsonParser = new JSONParser(new FileReader("E:/players_data.json").toString(), null, true);
+          jsonParser = new JSONParser(new FileReader("./filejson.json").toString(), null, true);
          //Parsing the contents of the JSON file
          JSONObject jsonObject = (JSONObject) jsonParser.parse();
          //Retrieving the array
@@ -56,13 +56,13 @@ public class clsJson {
          for(Object object : jsonArray) {
             JSONObject record = (JSONObject) object;
             //lst.add();
-//            int id = Integer.parseInt((String) record.get("ID"));
-//            String first_name = (String) record.get("First_Name");
-//            String last_name = (String) record.get("Last_Name");
-//            String date = (String) record.get("Date_Of_Birth");
-//            long date_of_birth = Date.valueOf(date).getTime();
-//            String place_of_birth = (String) record.get("Place_Of_Birth");
-//            String country = (String) record.get("Country");
+            int id = Integer.parseInt((String) record.get("ID"));
+            String first_name = (String) record.get("First_Name");
+            String last_name = (String) record.get("Last_Name");
+            String date = (String) record.get("Date_Of_Birth");
+            long date_of_birth = Date.valueOf(date).getTime();
+            String place_of_birth = (String) record.get("Place_Of_Birth");
+            String country = (String) record.get("Country");
          }  
          System.out.println("Records inserted.....");
       } catch (Exception e) {
