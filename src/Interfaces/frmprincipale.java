@@ -44,7 +44,7 @@ public class frmprincipale extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtchemin = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
@@ -59,10 +59,10 @@ public class frmprincipale extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/json-icon-512x512-l8x97ij7.png"))); // NOI18N
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, 70));
 
-        jLabel9.setFont(new java.awt.Font("Pristina", 1, 48)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Viner Hand ITC", 1, 48)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("JSON TO LIST");
+        jLabel9.setText("JSON TO MYSQL");
         jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 440, 60));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
@@ -119,12 +119,12 @@ public class frmprincipale extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 170, 40));
 
-        jTextField1.setEditable(false);
-        jTextField1.setBackground(new java.awt.Color(250, 250, 250));
-        jTextField1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField1.setText("jTextField1");
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 630, 40));
+        txtchemin.setEditable(false);
+        txtchemin.setBackground(new java.awt.Color(250, 250, 250));
+        txtchemin.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        txtchemin.setForeground(new java.awt.Color(153, 153, 153));
+        txtchemin.setText("jTextField1");
+        jPanel1.add(txtchemin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 630, 40));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -158,7 +158,7 @@ public class frmprincipale extends javax.swing.JFrame {
     private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
         // TODO add your handling code here:
         clsJson jso=new clsJson();
-        jso.insertJsonfile();
+        jso.insertJsonfile(txtchemin);
         clspersonne per=new clspersonne();
         try {
             per.chargement(jTable1);
@@ -170,7 +170,7 @@ public class frmprincipale extends javax.swing.JFrame {
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
         // TODO add your handling code here:
         clsJson json=new clsJson();
-        json.ChooseJsonFile(jTextField1);
+        json.ChooseJsonFile(txtchemin);
     }//GEN-LAST:event_jPanel4MouseClicked
 
     /**
@@ -221,6 +221,6 @@ public class frmprincipale extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField txtchemin;
     // End of variables declaration//GEN-END:variables
 }

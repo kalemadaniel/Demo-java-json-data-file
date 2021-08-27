@@ -38,17 +38,12 @@ public class clsJson {
         }
     }
     
-    
-    
-  
-
-    
-    public void insertJsonfile()  {
+    public void insertJsonfile(JTextField txtChemin)  {
         //Creating a JSONParser object
       JSONParser jsonParser = new JSONParser();
       try {
          //Parsing the contents of the JSON file
-         JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader("./filejson.json"));
+         JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader(txtChemin.getText()));
          //Retrieving the array
          JSONArray jsonArray = (JSONArray) jsonObject.get("population");
          
