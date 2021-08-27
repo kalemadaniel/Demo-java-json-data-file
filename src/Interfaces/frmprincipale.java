@@ -153,6 +153,8 @@ public class frmprincipale extends javax.swing.JFrame {
 
     private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
         // TODO add your handling code here:
+        clsJson jso=new clsJson();
+        jso.insertJsonfile();
     }//GEN-LAST:event_jPanel2MouseClicked
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked

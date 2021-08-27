@@ -45,7 +45,6 @@ public class clsJson {
 
     
     public void insertJsonfile()  {
-        // TODO code application logic here
         //Creating a JSONParser object
       JSONParser jsonParser = new JSONParser();
       try {
@@ -60,11 +59,11 @@ public class clsJson {
             JSONObject record = (JSONObject) object;
             pers.setId(Integer.parseInt((String) record.get("ID")));
             pers.setNom((String) record.get("nom"));
-            pers.setNom((String) record.get("postnom"));
-            pers.setNom((String) record.get("prenom"));
+            pers.setPostnom((String) record.get("postnom"));
+            pers.setPrenom((String) record.get("prenom"));
             pers.setAge(Integer.parseInt((String) record.get("age")));
-            pers.setNom((String) record.get("genre"));
-            pers.setNom((String) record.get("ville"));
+            pers.setGenre((String) record.get("genre"));
+            pers.setVille((String) record.get("ville"));
             pers.insertdata(pers);
          }  
          System.out.println("Records inserted.....");
