@@ -6,17 +6,12 @@
 package classes;
 
 import java.io.File;
-import java.sql.Connection;
 import javax.swing.JFileChooser;
 import javax.swing.JTextField;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.Date;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.text.ParseException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -42,6 +37,10 @@ public class clsJson {
             txtPath.setText(path);
         }
     }
+    
+    
+    
+  
 
     
     public void insertJsonfile()  {

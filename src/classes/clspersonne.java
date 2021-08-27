@@ -9,8 +9,13 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import net.proteanit.sql.DbUtils;
 
 /**
  *
@@ -149,6 +154,20 @@ public class clspersonne {
             Logger.getLogger(clspersonne.class.getName()).log(Level.SEVERE, null, ex);
         }
    }
+   
+   public void chargement(JTable tbl) throws SQLException {
+        try {
+            Connection con = ConnectToDB();
+            PreparedStatement st = con.prepareStatement("SELECT * FROM `v_popupation`");
+            ResultSet rs = st.executeQuery();
+            tbl.setModel(DbUtils.resultSetToTableModel(rs));
+        } catch (SQLException e) {
+            JOptionPane.showConfirmDialog(null, e);
+        } catch (Exception ex) {
+            Logger.getLogger(clspersonne.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
     
     
 }

@@ -6,6 +6,10 @@
 package Interfaces;
 
 import classes.clsJson;
+import classes.clspersonne;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -155,6 +159,12 @@ public class frmprincipale extends javax.swing.JFrame {
         // TODO add your handling code here:
         clsJson jso=new clsJson();
         jso.insertJsonfile();
+        clspersonne per=new clspersonne();
+        try {
+            per.chargement(jTable1);
+        } catch (SQLException ex) {
+            Logger.getLogger(frmprincipale.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jPanel2MouseClicked
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
