@@ -50,9 +50,9 @@ public class clsJson {
       JSONParser jsonParser = new JSONParser();
       try {
          //Parsing the contents of the JSON file
-         JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader("./players_data.json"));
+         JSONObject jsonObject = (JSONObject) jsonParser.parse(new FileReader("./filejson.json"));
          //Retrieving the array
-         JSONArray jsonArray = (JSONArray) jsonObject.get("players_data");
+         JSONArray jsonArray = (JSONArray) jsonObject.get("population");
          
          //Insert a row into the MyPlayers table
          clspersonne pers=new clspersonne();
