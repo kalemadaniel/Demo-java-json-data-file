@@ -10,6 +10,7 @@ import classes.clspersonne;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -123,7 +124,6 @@ public class frmprincipale extends javax.swing.JFrame {
         txtchemin.setBackground(new java.awt.Color(250, 250, 250));
         txtchemin.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         txtchemin.setForeground(new java.awt.Color(153, 153, 153));
-        txtchemin.setText("jTextField1");
         jPanel1.add(txtchemin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 630, 40));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -157,19 +157,24 @@ public class frmprincipale extends javax.swing.JFrame {
 
     private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
         // TODO add your handling code here:
-        clsJson jso=new clsJson();
-        jso.insertJsonfile(txtchemin);
-        clspersonne per=new clspersonne();
-        try {
-            per.chargement(jTable1);
-        } catch (SQLException ex) {
-            Logger.getLogger(frmprincipale.class.getName()).log(Level.SEVERE, null, ex);
+        if (txtchemin.getText().equals("")) {
+            JOptionPane.showMessageDialog(this, "");
+        } else {
+            clsJson jso = new clsJson();
+            jso.insertJsonfile(txtchemin);
+            clspersonne per = new clspersonne();
+            try {
+                per.chargement(jTable1);
+            } catch (SQLException ex) {
+                Logger.getLogger(frmprincipale.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
+
     }//GEN-LAST:event_jPanel2MouseClicked
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
         // TODO add your handling code here:
-        clsJson json=new clsJson();
+        clsJson json = new clsJson();
         json.ChooseJsonFile(txtchemin);
     }//GEN-LAST:event_jPanel4MouseClicked
 
