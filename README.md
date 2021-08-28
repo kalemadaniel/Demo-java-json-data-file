@@ -22,3 +22,100 @@ Les étapes pour installer le programme sont :
 ET si vous souhaitez constituer un executable par la suite il faut faire le ``clean and build ``
 
 Dites ce qu'il faut faire...
+
+### Mon fichier JSON
+
+{
+   "population": [
+       {
+           "ID": "1",
+           "nom": "Kalema",
+           "postnom": "Daniel",
+           "prenom": "Jonathan",
+           "age": "25",
+           "genre": "Masculin",
+           "ville": "Goma"
+       },
+       {
+           "ID": "2",
+           "nom": "Dorcas",
+           "postnom": "Bisimwa",
+           "prenom": "Yvette",
+           "age": "27",
+           "genre": "Féminin",
+           "ville": "Kinshasa"
+       },
+       {
+           "ID": "3",
+           "nom": "Kakule",
+           "postnom": "Kennedy",
+           "prenom": "Jean",
+           "age": "38",
+           "genre": "Masculin",
+           "ville": "Butembo"
+       },
+       {
+           "ID": "4",
+           "nom": "Jean",
+           "postnom": "Pierre",
+           "prenom": "Kaluira",
+           "age": "70",
+           "genre": "Masculin",
+           "ville": "Bruxelle"
+       },
+       {
+           "ID": "5",
+           "nom": "James",
+           "postnom": "Grilo",
+           "prenom": "Virat",
+           "age": "23",
+           "genre": "Masculin",
+           "ville": "Bunia"
+       },
+       {
+           "ID": "6",
+           "nom": "Rohit",
+           "postnom": "Nzuto",
+           "prenom": "Jeanne",
+           "age": "45",
+           "genre": "Féminin",
+           "ville": "Kalemie"
+       },
+       {
+           "ID": "7",
+           "nom": "Sikuly",
+           "postnom": "Nzanzu",
+           "prenom": "Daniel",
+           "age": "36",
+           "genre": "Masculin",
+           "ville": "Bukavu"
+       },
+       {
+           "ID": "8",
+           "nom": "Gloria",
+           "postnom": "Kitoko",
+           "prenom": "Ravindra",
+           "age": "85",
+           "genre": "Masculin",
+           "ville": "Uvira"
+       },
+       {
+           "ID": "9",
+           "nom": "Filage",
+           "postnom": "Nzau",
+           "prenom": "Gracieux",
+           "age": "32",
+           "genre": "Masculin",
+           "ville": "Kisangani"
+       },
+       {
+           "ID": "10",
+           "nom": "Mahamba",
+           "postnom": "Kambale",
+           "prenom": "Anderson",
+           "age": "16",
+           "genre": "Masculin",
+           "ville": "Butembo"
+       }
+   ]
+}
