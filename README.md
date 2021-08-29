@@ -146,3 +146,20 @@ genre AS Sexe, age AS Age, ville as Ville FROM tb_population ORDER BY id;
 
 ```
 
+## Contribution
+
+Si vous souhaitez contribuer, vous pouvez le faire facilement car le projet est documenter pour savoir comment le faire.
+
+## Versions
+Listez les versions ici 
+_exemple :_
+**Dernière version stable :** 1.0
+
+## Auteurs
+le(s) auteur(s) du projet est(sont) :
+* **Kalema daniel jonathan** _alias_ [@kalemadaniel](https://github.com/kalemadaniel)
+
+## License
+
+Ce projet est sous licence ``open source`` 
+
