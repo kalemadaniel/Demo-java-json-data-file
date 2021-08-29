@@ -24,7 +24,12 @@ ET si vous souhaitez constituer un executable par la suite il faut faire le ``cl
 Dites ce qu'il faut faire...
 ## Comment ça marche ?
 
+
+### Voici mes requetes SQL
+
 ### Voici mon fichier JSON
+
+Premierement il faut avoir un fichier JSON comme celui ci par exemple
 
 ```
 {
@@ -123,9 +128,8 @@ Dites ce qu'il faut faire...
 }
 ```
 
-### Voici mes requetes SQL
 
-Pour la creation de la structure des données
+Et deuxièmement il faut creer la structure SQL qui correspond à notre fichier JSON
 
 ```
 CREATE OR REPLACE DATABASE bd_json_msyql;
