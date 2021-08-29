@@ -15,9 +15,9 @@ Ce qui est important pour contribuer au dévéloppement de ce projet :
 Les étapes pour installer le programme sont :
 
 1. **Télécharger le dossier**
-- Importer le projet
-- Changer les paramètres de connexion 
-- Executer le projet
+2. **Importer le projet**
+3. **Changer les paramètres de connexion** 
+4. **Executer le projet**
 
 ET si vous souhaitez constituer un executable par la suite il faut faire le ``clean and build ``
 
