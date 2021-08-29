@@ -161,5 +161,5 @@ le(s) auteur(s) du projet est(sont) :
 
 ## License
 
-Ce projet est sous licence ``open source`` 
+Ce projet est sous licence **``open source``** 
 
