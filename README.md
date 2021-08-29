@@ -29,7 +29,7 @@ Dites ce qu'il faut faire...
 
 ### Voici mon fichier JSON
 
-Premierement il faut avoir un fichier JSON comme celui ci par exemple
+D'abord il faut avoir un fichier JSON comme celui ci par exemple
 
 ```
 {
