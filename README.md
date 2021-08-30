@@ -19,7 +19,7 @@ Les étapes pour installer le programme sont :
 3. **Changer les paramètres de connexion** 
 4. **Executer le projet**
 
-ET si vous souhaitez constituer un executable par la suite il faut faire le ``clean and build ``
+ET si vous souhaitez constituer un exécutable par la suite il faut faire le ``clean and build ``
 
 Dites ce qu'il faut faire...
 ## Comment ça marche ?
@@ -163,7 +163,7 @@ Puis Cliquer sur Charger
 
 ## Contribution
 
-Si vous souhaitez contribuer, vous pouvez le faire facilement car le projet est documenter pour savoir comment le faire.
+Si vous souhaitez contribuer, sache
 
 ## Versions
 Listez les versions ici 
