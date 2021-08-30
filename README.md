@@ -147,7 +147,7 @@ genre AS Sexe, age AS Age, ville as Ville FROM tb_population ORDER BY id;
 
 ```
 
-### La solution Interface graphique
+### La solution interface graphique
 
 A l'ouverture de l'application, ça se presente comme ceci
 
