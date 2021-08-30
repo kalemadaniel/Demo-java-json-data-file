@@ -153,6 +153,10 @@ A l'ouverture de l'application, ça se presente comme ceci
 
 ![JSON](https://user-images.githubusercontent.com/51014164/131299311-bfc7af4f-4098-41be-9035-cbdd9e450fa3.JPG)
 
+Il faut ensuite parcourir et trouver le fichier JSON
+
+![JSON1](https://user-images.githubusercontent.com/51014164/131299755-8058e301-32e8-4541-8fda-bdba4548b32c.JPG)
+
 
 ## Contribution
 
