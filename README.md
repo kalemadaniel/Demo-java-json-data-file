@@ -149,6 +149,8 @@ genre AS Sexe, age AS Age, ville as Ville FROM tb_population ORDER BY id;
 
 ### La solution GUI
 
+A l'ouverture de l'application, ça se presente comme ceci
+
 ![JSON](https://user-images.githubusercontent.com/51014164/131299311-bfc7af4f-4098-41be-9035-cbdd9e450fa3.JPG)
 
 
