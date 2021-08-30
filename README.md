@@ -166,6 +166,7 @@ Puis Cliquer sur Charger
 J’accorde aux utilisateurs les droits d'utiliser, d'étudier, de modifier et de distribuer le logiciel et son code source à quiconque et à n'importe quelle fin.
 
 ## Versions
+ça correspond à un état donné de l'évolution du logiciel et j'utilise le versionnage. Ci dessous les versions produites
 
 **Dernière version stable :** 1.0
 
