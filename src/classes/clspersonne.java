@@ -145,7 +145,7 @@ public class clspersonne {
             pstmt.setInt(1, pers.getId());
             pstmt.setString(2, pers.getNom());
             pstmt.setString(3, pers.getPostnom());
-            pstmt.setString(4, pers.getPostnom());
+            pstmt.setString(4, pers.getPrenom());
             pstmt.setInt(5, pers.getAge());
             pstmt.setString(6, pers.getGenre());
             pstmt.setString(7, pers.getVille());
