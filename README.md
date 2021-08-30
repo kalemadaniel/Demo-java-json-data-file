@@ -126,7 +126,7 @@ D'abord il faut avoir un fichier JSON comme celui ci
 ```
 ### Voici mes requêtes SQL
 
-Et deuxièmement il faut creer la structure SQL qui correspond à notre fichier JSON
+Ensuite il faut creer la structure SQL qui correspond à notre fichier JSON
 
 ```
 CREATE OR REPLACE DATABASE bd_json_msyql;
