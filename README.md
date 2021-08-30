@@ -24,9 +24,6 @@ ET si vous souhaitez constituer un executable par la suite il faut faire le ``cl
 Dites ce qu'il faut faire...
 ## Comment ça marche ?
 
-
-### Voici mes requetes SQL
-
 ### Voici mon fichier JSON
 
 D'abord il faut avoir un fichier JSON comme celui ci par exemple
@@ -127,7 +124,7 @@ D'abord il faut avoir un fichier JSON comme celui ci par exemple
    ]
 }
 ```
-
+### Voici mes requetes SQL
 
 Et deuxièmement il faut creer la structure SQL qui correspond à notre fichier JSON
 
