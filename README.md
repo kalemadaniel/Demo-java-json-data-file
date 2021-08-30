@@ -157,10 +157,9 @@ Il faut ensuite parcourir et trouver le fichier JSON
 
 ![JSON1](https://user-images.githubusercontent.com/51014164/131299755-8058e301-32e8-4541-8fda-bdba4548b32c.JPG)
 
-
+Puis Cliquer sur Charger
 
 ![JSON2](https://user-images.githubusercontent.com/51014164/131299881-d29922d3-c0a7-4c04-a43d-29200f0de01f.JPG)
-
 
 ## Contribution
 
