@@ -96,9 +96,9 @@ public class frmprincipale extends javax.swing.JFrame {
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("- - -");
-        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 50, 40));
+        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 70, 40));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 40));
 
         jPanel2.setBackground(new java.awt.Color(250, 250, 250));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -124,7 +124,7 @@ public class frmprincipale extends javax.swing.JFrame {
         txtchemin.setBackground(new java.awt.Color(250, 250, 250));
         txtchemin.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         txtchemin.setForeground(new java.awt.Color(153, 153, 153));
-        jPanel1.add(txtchemin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 630, 40));
+        jPanel1.add(txtchemin, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 650, 40));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
