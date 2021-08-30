@@ -124,7 +124,7 @@ D'abord il faut avoir un fichier JSON comme celui ci
    ]
 }
 ```
-### Voici mes requetes SQL
+### Voici mes requêtes SQL
 
 Et deuxièmement il faut creer la structure SQL qui correspond à notre fichier JSON
 
