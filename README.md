@@ -15,12 +15,10 @@ Les applications nécessaires pour contribuer au dévéloppement de ce projet :
 
 Les étapes pour installer le programme sont :
 
-1. **Créer la base des données et le(s) table(s)**
 1. **Télécharger le dossier**
 2. **Importer le projet**
 3. **Changer les paramètres de connexion** 
-4. **Être en possession d'un fichier JSON**
-5. **Executer le projet**
+4. **Executer le projet**
 
 ET si vous souhaitez constituer un exécutable par la suite il faut faire le ``clean and build ``
 
