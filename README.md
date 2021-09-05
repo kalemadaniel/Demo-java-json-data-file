@@ -22,7 +22,6 @@ Les étapes pour installer le programme sont :
 
 ET si vous souhaitez constituer un exécutable par la suite il faut faire le ``clean and build ``
 
-
 ## Comment ça marche ?
 
 ### Voici mon fichier JSON
@@ -162,7 +161,7 @@ Puis Cliquer sur Charger
 
 ![JSON2](https://user-images.githubusercontent.com/51014164/131299881-d29922d3-c0a7-4c04-a43d-29200f0de01f.JPG)
 
-## Contribution
+## Pour les contributions
 
 J’accorde aux utilisateurs les droits d'utiliser, d'étudier, de modifier et de distribuer le logiciel et son code source à quiconque et à n'importe quelle fin.
 
