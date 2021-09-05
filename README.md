@@ -22,7 +22,7 @@ Les étapes pour installer le programme sont :
 
 ET si vous souhaitez constituer un exécutable par la suite il faut faire le ``clean and build ``
 
-Dites ce qu
+Dites ce
 ## Comment ça marche ?
 
 ### Voici mon fichier JSON
