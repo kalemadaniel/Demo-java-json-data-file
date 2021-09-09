@@ -26,7 +26,7 @@ ET si vous souhaitez constituer un exécutable par la suite il faut faire le ``c
 
 ### Voici mon fichier JSON
 
-Premiere il faut avoir un fichier JSON comme celui ci
+Premierem il faut avoir un fichier JSON comme celui ci
 
 ```
 {
